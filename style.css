@@ -131,7 +131,8 @@ p {
 
 /* Home */
 #home {
-  background: url("/imgs/home-background1.png") center/cover no-repeat;
+  background: url("https://kolya4359.github.io/portfolio/imgs/home-background1.png")
+    center/cover no-repeat;
   padding: 30px;
   text-align: center;
 }
