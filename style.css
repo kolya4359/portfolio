@@ -13,6 +13,7 @@
   --color-blue: #73aace;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
+  --color-skyblue: #b0f7ff;
 
   /* Font size */
   --font-large: 48px;
@@ -98,7 +99,7 @@ p {
 #navbar {
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-pink);
+  background-color: var(--color-skyblue);
   align-items: center;
   color: var(--color-white);
   padding: 16px;
@@ -130,14 +131,14 @@ p {
 
 /* Home */
 #home {
-  background: url("/imgs/home-background.png") center/cover no-repeat;
-  padding: 40px;
+  background: url("/imgs/home-background1.png") center/cover no-repeat;
+  padding: 30px;
   text-align: center;
 }
 
-.hom__avatar {
-  width: 250px;
-  height: 250px;
+.home__avatar {
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   border: 2px solid var(--color-light-white);
 }
@@ -147,7 +148,7 @@ p {
   color: var(--color-white);
 }
 
-.home__cantact {
+.home__contact {
   color: var(--color-white);
   font-size: var(--font-regular);
   font-weight: var(--weight-bold);
@@ -182,6 +183,7 @@ p {
   line-height: 170px;
   font-size: 70px;
   margin: auto;
+  text-align: center;
   color: var(--color-blue);
   border: 1px solid var(--color-blue);
   border-radius: 50%;
@@ -189,7 +191,7 @@ p {
 }
 
 .major__icon i {
-  transition: all var(--animation-duration) ease;
+  transition: all var(--animation-duration) ease-in;
 }
 .major__icon:hover i {
   color: var(--color-pink);
@@ -244,7 +246,7 @@ p {
 .skillset__title {
   color: var(--color-white);
 }
-.skillset_left {
+.skillset__left {
   flex-basis: 60%;
   background-color: var(--color-dark-grey);
   padding: 20px 40px;
@@ -309,6 +311,7 @@ p {
 }
 
 .category__count {
+  background-color: var(--color-orange);
   border: 1px solid var(--color-orange);
   border-radius: 50%;
   color: var(--color-white);
@@ -383,7 +386,7 @@ p {
 
 /* Contact */
 #contact {
-  background-color: var(--color-pink);
+  background-color: var(--color-skyblue);
 }
 
 .contact__title,
