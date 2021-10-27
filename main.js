@@ -19,13 +19,19 @@ navbarMenu.addEventListener("click", (event) => {
   if (link == null) {
     return;
   }
-
+  navbarMenu.classList.remove("open");
   scrollIntoView(link);
 });
 
+// Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector(".navbar__toggle-btn");
+navbarToggleBtn.addEventListener("click", () => {
+  navbarMenu.classList.toggle("open");
+});
+
 // Handle click on "contact me" button on home
-const contactBtn = document.querySelector(".home__contact");
-contactBtn.addEventListener("click", () => {
+const homeContactBtn = document.querySelector(".home__contact");
+homeContactBtn.addEventListener("click", () => {
   scrollIntoView("#contact");
 });
 
@@ -36,7 +42,7 @@ document.addEventListener("scroll", () => {
   home.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
-// Show "arrow-up" button when scrolling down
+// Show "arrow up" button when scrolling down
 const arrowUp = document.querySelector(".arrow-up");
 document.addEventListener("scroll", () => {
   if (window.scrollY > homeHeight / 2) {
@@ -46,7 +52,7 @@ document.addEventListener("scroll", () => {
   }
 });
 
-//Handle click on the "arrow-up" button
+// Handle click on the "arrow up" button
 arrowUp.addEventListener("click", () => {
   scrollIntoView("#home");
 });
@@ -60,6 +66,14 @@ workBtnContainer.addEventListener("click", (e) => {
   if (filter == null) {
     return;
   }
+
+  // Remove selection from the previous item and select the new one
+  const active = document.querySelector(".category__btn.selected");
+  if (active != null) {
+    active.classList.remove("selected");
+  }
+  e.target.classList.add("selected");
+
   projectContainer.classList.add("anim-out");
   setTimeout(() => {
     projects.forEach((project) => {
