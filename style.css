@@ -4,16 +4,13 @@
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
-  --color-pink: #fe918d;
-  --color-dark-pink: #ff6863;
   --color-black: #000000;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
   --color-light-grey: #7c7979;
   --color-yellow: #fff7d1;
-  --color-orange: #feb546;
-  --color-skyblue: #b0f7ff;
-  --color-blue: #98dfff;
+  --color-lavender: #a057c2;
+  --color-orange: orange;
 
   /* Font size */
   --font-large: 48px;
@@ -109,7 +106,7 @@ p {
 }
 
 #navbar.navbar--dark {
-  background-color: var(--color-skyblue);
+  background-color: var(--color-lavender);
   padding: 8px;
 }
 
@@ -134,7 +131,7 @@ p {
 
 .navbar__menu__item:hover {
   border-color: var(--color-white);
-  background-color: var(--color-blue);
+  background-color: var(--color-orange);
 }
 
 .navbar__toggle-btn {
@@ -148,7 +145,7 @@ p {
 
 /* Home */
 #home {
-  background: url("imgs/home-background1.png") center/cover no-repeat;
+  background: url("imgs/home.png") center/cover no-repeat;
   padding: 40px;
   padding-top: 120px;
   text-align: center;
@@ -202,8 +199,8 @@ p {
   font-size: 70px;
   margin: auto;
   text-align: center;
-  color: var(--color-orange);
-  border: 1px solid var(--color-orange);
+  color: var(--color-lavender);
+  border: 1px solid var(--color-lavender);
   border-radius: 50%;
   margin-bottom: 16px;
 }
@@ -212,7 +209,7 @@ p {
   transition: all var(--animation-duration) ease;
 }
 .major__icon:hover i {
-  color: var(--color-blue);
+  color: var(--color-orange);
   transform: rotate(-30deg) scale(1.1);
 }
 
@@ -287,7 +284,7 @@ p {
 
 .skill__value {
   height: 3px;
-  background-color: var(--color-orange);
+  background-color: var(--color-yellow);
 }
 
 .skillset__right {
@@ -319,7 +316,7 @@ p {
 
 .category__btn.selected,
 .category__btn:hover {
-  background-color: var(--color-blue);
+  background-color: var(--color-lavender);
   color: var(--color-white);
 }
 
@@ -331,7 +328,7 @@ p {
 
 .category__count {
   background-color: var(--color-orange);
-  border: 1px solid var(--color-orange);
+  border: 1px solid var(--color-lavender);
   border-radius: 50%;
   color: var(--color-white);
   width: 24px;
@@ -399,7 +396,7 @@ p {
 }
 
 .project__description h3 {
-  color: var(--color-orange);
+  color: var(--color-yellow);
 }
 
 .project__description h3:after {
@@ -416,7 +413,7 @@ p {
 
 /* Contact */
 #contact {
-  background-color: var(--color-skyblue);
+  background-color: var(--color-lavender);
 }
 
 .contact__title,
@@ -448,7 +445,7 @@ p {
   width: 70px;
   height: 70px;
   font-size: 50px;
-  background-color: var(--color-skyblue);
+  background-color: var(--color-lavender);
   color: var(--color-white);
   border-radius: 50%;
   opacity: 0;
@@ -481,7 +478,7 @@ p {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
-    background-color: var(--color-skyblue);
+    background-color: var(--color-lavender);
   }
 
   #navbar.navbar--dark {
